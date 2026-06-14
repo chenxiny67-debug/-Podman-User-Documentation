@@ -1,11 +1,3 @@
-| **<font style="background-color:rgba(255, 255, 255, 0);">文件</font>** | **<font style="background-color:rgba(255, 255, 255, 0);">作用</font>** |
-| --- | --- |
-| Dockerfile | <font style="background-color:rgba(255, 255, 255, 0);">构建镜像、基础环境及依赖</font> |
-| docker-compose.yml | <font style="background-color:rgba(255, 255, 255, 0);">启动多容器、配置网络</font> |
-| .dockerignore | <font style="background-color:rgba(255, 255, 255, 0);">忽略不需要的文件和目录</font> |
-| .gitlab-ci.yml | <font style="background-color:rgba(255, 255, 255, 0);">GitLab 自动化流水线阶段、脚本任务</font> |
-
-
 # Podman
 ## Podman 连接 Desktop 
 1. 宿主机 [参考](https://desktop.podman.org.cn/docs/podman/podman-remote)
@@ -55,7 +47,7 @@ podman system connection list
 podman system connection rm yan-servers 
 ```
 
-# Docker
+# Podman 操作
 ## 镜像操作
 + [<font style="background-color:rgba(255, 255, 255, 0);">仓库地址</font>](https://hub.docker.com/explore)
 
@@ -142,9 +134,9 @@ podman commit <容器名> <新镜像名>
 ```
 
 # GitLab
-**<font style="background-color:rgba(255, 255, 255, 0);">CI (持续集成)</font>**<font style="background-color:rgba(255, 255, 255, 0);">： </font>`<font style="background-color:rgba(255, 255, 255, 0);">代码提交</font>`<font style="background-color:rgba(255, 255, 255, 0);"> → </font>`<font style="background-color:rgba(255, 255, 255, 0);">自动构建</font>`<font style="background-color:rgba(255, 255, 255, 0);"> → </font>`<font style="background-color:rgba(255, 255, 255, 0);">自动测试</font>`
+**<font style="background-color:rgba(255, 255, 255, 0);">CI (持续集成)</font>**<font style="background-color:rgba(255, 255, 255, 0);">： 代码提交 → 自动构建 → 自动测试</font>
 
-**<font style="background-color:rgba(255, 255, 255, 0);">CD (持续交付)</font>**<font style="background-color:rgba(255, 255, 255, 0);">： </font>`<font style="background-color:rgba(255, 255, 255, 0);">自动部署到预生产/测试环境</font>`<font style="background-color:rgba(255, 255, 255, 0);"> → </font>`**<font style="background-color:rgba(255, 255, 255, 0);">人工批准/点击发布</font>**`<font style="background-color:rgba(255, 255, 255, 0);"> → </font>`<font style="background-color:rgba(255, 255, 255, 0);">自动部署到生产环境</font>`
+**<font style="background-color:rgba(255, 255, 255, 0);">CD (持续交付)</font>**<font style="background-color:rgba(255, 255, 255, 0);">：自动部署到预生产/测试环境 → 人工批准/点击发布 → 自动部署到生产环境</font>
 
 <font style="background-color:rgba(255, 255, 255, 0);"></font>
 
