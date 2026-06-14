@@ -1,9 +1,9 @@
 | **<font style="background-color:rgba(255, 255, 255, 0);">文件</font>** | **<font style="background-color:rgba(255, 255, 255, 0);">作用</font>** |
 | --- | --- |
 | Dockerfile | <font style="background-color:rgba(255, 255, 255, 0);">构建镜像、基础环境及依赖</font> |
-|  | <font style="background-color:rgba(255, 255, 255, 0);">启动多容器、配置网络</font> |
-| `<font style="background-color:rgba(255, 255, 255, 0);">.dockerignore</font>` | <font style="background-color:rgba(255, 255, 255, 0);">忽略不需要的文件和目录</font> |
-| `<font style="background-color:rgba(255, 255, 255, 0);">.gitlab-ci.yml</font>` | <font style="background-color:rgba(255, 255, 255, 0);">GitLab 自动化流水线阶段、脚本任务</font> |
+| docker-compose.yml | <font style="background-color:rgba(255, 255, 255, 0);">启动多容器、配置网络</font> |
+| .dockerignore | <font style="background-color:rgba(255, 255, 255, 0);">忽略不需要的文件和目录</font> |
+| .gitlab-ci.yml | <font style="background-color:rgba(255, 255, 255, 0);">GitLab 自动化流水线阶段、脚本任务</font> |
 
 
 # Podman
@@ -84,9 +84,9 @@ podman exec <容器名> <命令>           # 使用命令
 
 | **<font style="background-color:rgba(255, 255, 255, 0);">重启策略</font>** | **<font style="background-color:rgba(255, 255, 255, 0);">报错崩溃</font>** | **<font style="background-color:rgba(255, 255, 255, 0);">正常退出</font>** | **<font style="background-color:rgba(255, 255, 255, 0);">手动 stop</font>** | **<font style="background-color:rgba(255, 255, 255, 0);">宿主机重启后</font>** |
 | --- | --- | --- | --- | --- |
-| `**<font style="background-color:rgba(255, 255, 255, 0);">--restart always</font>**` | <font style="background-color:rgba(255, 255, 255, 0);">是</font> | <font style="background-color:rgba(255, 255, 255, 0);">是</font> | <font style="background-color:rgba(255, 255, 255, 0);"></font><font style="background-color:rgba(255, 255, 255, 0);">不</font> | <font style="background-color:rgba(255, 255, 255, 0);">不</font> |
-| `**<font style="background-color:rgba(255, 255, 255, 0);">--restart unless-stopped</font>**` | <font style="background-color:rgba(255, 255, 255, 0);">是</font> | <font style="background-color:rgba(255, 255, 255, 0);">是</font> | <font style="background-color:rgba(255, 255, 255, 0);"></font><font style="background-color:rgba(255, 255, 255, 0);">不</font> | <font style="background-color:rgba(255, 255, 255, 0);">不</font> |
-| `**<font style="background-color:rgba(255, 255, 255, 0);">--restart on-failure</font>**` | <font style="background-color:rgba(255, 255, 255, 0);">是</font> | <font style="background-color:rgba(255, 255, 255, 0);">不</font> | <font style="background-color:rgba(255, 255, 255, 0);"></font><font style="background-color:rgba(255, 255, 255, 0);">不</font> | <font style="background-color:rgba(255, 255, 255, 0);">是</font> |
+| --restart always | <font style="background-color:rgba(255, 255, 255, 0);">是</font> | <font style="background-color:rgba(255, 255, 255, 0);">是</font> | <font style="background-color:rgba(255, 255, 255, 0);"></font><font style="background-color:rgba(255, 255, 255, 0);">不</font> | <font style="background-color:rgba(255, 255, 255, 0);">不</font> |
+| <font style="background-color:rgba(255, 255, 255, 0);">--restart unless-stopped</font> | <font style="background-color:rgba(255, 255, 255, 0);">是</font> | <font style="background-color:rgba(255, 255, 255, 0);">是</font> | <font style="background-color:rgba(255, 255, 255, 0);"></font><font style="background-color:rgba(255, 255, 255, 0);">不</font> | <font style="background-color:rgba(255, 255, 255, 0);">不</font> |
+| --restart on-failure | <font style="background-color:rgba(255, 255, 255, 0);">是</font> | <font style="background-color:rgba(255, 255, 255, 0);">不</font> | <font style="background-color:rgba(255, 255, 255, 0);"></font><font style="background-color:rgba(255, 255, 255, 0);">不</font> | <font style="background-color:rgba(255, 255, 255, 0);">是</font> |
 
 
 ```bash
