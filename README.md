@@ -1,7 +1,7 @@
 | **<font style="background-color:rgba(255, 255, 255, 0);">文件</font>** | **<font style="background-color:rgba(255, 255, 255, 0);">作用</font>** |
 | --- | --- |
-| `<font style="background-color:rgba(255, 255, 255, 0);">Dockerfile</font>` | <font style="background-color:rgba(255, 255, 255, 0);">构建镜像、基础环境及依赖</font> |
-| `<font style="background-color:rgba(255, 255, 255, 0);">docker-compose.yml</font>` | <font style="background-color:rgba(255, 255, 255, 0);">启动多容器、配置网络</font> |
+| Dockerfile | <font style="background-color:rgba(255, 255, 255, 0);">构建镜像、基础环境及依赖</font> |
+|  | <font style="background-color:rgba(255, 255, 255, 0);">启动多容器、配置网络</font> |
 | `<font style="background-color:rgba(255, 255, 255, 0);">.dockerignore</font>` | <font style="background-color:rgba(255, 255, 255, 0);">忽略不需要的文件和目录</font> |
 | `<font style="background-color:rgba(255, 255, 255, 0);">.gitlab-ci.yml</font>` | <font style="background-color:rgba(255, 255, 255, 0);">GitLab 自动化流水线阶段、脚本任务</font> |
 
